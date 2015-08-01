@@ -1,0 +1,35 @@
+//Global Grid Settings
+
+$susy: (
+	flow: ltr, //left-to-right display
+	output: float, //float vs isolate
+	math: fluid, //fluid vs. static Susy math.
+	column-width: false, // Width of each column. Need to provide value if static math is used.
+	container: 100%, // Container max-width. Can provide length, %, or auto.
+	container-position: center, //container float position on page. Can adjust padding here as well.
+	last-flow: to, //to right from left vs. from right to left.
+	columns: 24, //number of columns
+	gutters: 1/2, //gutter width in relation to column width. 1 implies that gutter width is equal to column-width. 
+	gutter-position: after, //affects margin position. Options include before, after, split, inside, inside-static.
+	global-box-sizing: border-box, //affects Susy math for padding/border inclusion in width/height propoerties. content-box excludes border and padding in calculations, while border-box includes them. Margins always excluded.
+	debug: (
+		image: show, //show or hide debug bars.
+		color: rgba(#66f, .25), //set bar color
+		output: overlay, //show bars in background or in overlay.
+		toggle: top right, //position the bar toggle
+	),
+	use-custom: (
+		background-image: true, // if true, look for a background-image mixin in the code (e.g. from Compass) before using Susy math to create one
+		background-options: false, //if false, just go ahead and use Susy's default for background-options
+		box-sizing: false,
+		clearfix: false,
+		rem: false,
+	),
+);
+
+//allows global-border-box (in Susy grid settings) to work
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}

@@ -9,11 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('portfolioApp', [
-    'ngAnimate',
-    'ngResource',
-    'ngRoute'
-  ])
+  .module('portfolioApp', ['ngAnimate', 'ngResource', 'ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

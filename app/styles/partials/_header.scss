@@ -1,0 +1,27 @@
+/* HEADER STYLES */
+
+.header {
+	@include span(24 of 24);
+	height: $base-line-height * 2;
+	line-height: $base-line-height * 2;
+
+	a {
+		@include span(16);
+		text-decoration: none;
+		text-align: center;
+	}
+
+	nav {
+		@include span(last 8);
+		@include flexbox((
+			display: flex,
+			justify-content: center
+		));
+
+		a {
+			padding: 0px 5px 0px 5px;
+			text-decoration: none;
+		}
+	}
+
+}

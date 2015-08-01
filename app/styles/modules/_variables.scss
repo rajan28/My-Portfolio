@@ -1,0 +1,42 @@
+// =====FONT SIZE=====
+$base-font-size: 16px;
+$base-line-height: 24px;
+$rhythm-unit: 'em';
+
+$h1-font-size: 2    * $base-font-size;
+$h2-font-size: 1.5  * $base-font-size;
+$h3-font-size: 1.17 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.67 * $base-font-size;
+
+// =====FONT FAMILY=====
+$base-font-family: 'Noto Serif', serif;
+$header-font-family: Open Sans, sans-serif;
+$monospace-font-family: Droid Sans Mono, monospace;
+
+// =====NORMALIZE=====
+$strict-normalize: true; /* Set this to true to force CSS output to exactly match normalize.css. */
+
+// =====BROWSER SUPPORT=====
+$browser-minimum-versions: (
+    'chrome':  null,
+    'firefox': null,
+    'ie':      null,
+    'safari':  null,
+    'opera':   null
+);
+
+// =====SPACING=====
+$indent-amount: 40px;
+
+// =====COLOR SCHEME=====
+$green: rgba(46, 204, 113,1.0);
+$orange: rgba(230, 126, 34, 1.0);
+$red: rgba(231, 76, 60, 1.0);
+$blue-gray: rgba(52, 73, 94, 1.0);
+$purple: rgba(155, 89, 182, 1.0);
+$dark-gray: #333;
+$medium-gray: #666;
+$light-gray: #999;
+

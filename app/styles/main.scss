@@ -1,0 +1,13 @@
+/* Main SCSS File */
+
+@import "modules/addons.scss";
+@import "modules/fonts.scss";
+@import "modules/variables.scss";
+@import "modules/grids.scss";
+
+@import "partials/base.scss";
+@import "partials/layout.scss";
+@import "partials/header.scss";
+@import "partials/home.scss";
+
+@import "vendor/animate.scss";
